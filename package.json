@@ -1,0 +1,19 @@
+{
+  "name": "docker-lab8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JunWie/docker-lab8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JunWie/docker-lab8/issues"
+  },
+  "homepage": "https://github.com/JunWie/docker-lab8#readme",
+  "description": ""
+}
