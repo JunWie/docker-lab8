@@ -38,4 +38,4 @@ jobs:
       - name: Upload SARIF report
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: reports/eslint-results.sarif
+          sarif_file: humblehome/reports/eslint-results.sarif
