@@ -2,10 +2,6 @@ name: ESLint Code Analysis
 
 on: [push, pull_request]
 
-defaults:
-  run:
-    working-directory: humblehome
-
 jobs:
   eslint:
     runs-on: ubuntu-latest
@@ -24,7 +20,7 @@ jobs:
         run: npm install
 
       - name: Create reports directory
-        run: mkdir -p humble/reports
+        run: mkdir -p reports
 
       - name: Install ESLint SARIF Formatter
         run: npm install @microsoft/eslint-formatter-sarif --save-dev
@@ -38,4 +34,4 @@ jobs:
       - name: Upload SARIF report
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: humblehome/reports/eslint-results.sarif
+          sarif_file: reports/eslint-results.sarif
