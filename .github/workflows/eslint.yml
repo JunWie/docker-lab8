@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Create reports directory
-        run: mkdir -p reports
+        run: mkdir -p humble/reports
 
       - name: Install ESLint SARIF Formatter
         run: npm install @microsoft/eslint-formatter-sarif --save-dev
